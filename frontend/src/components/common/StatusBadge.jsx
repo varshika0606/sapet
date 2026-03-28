@@ -8,8 +8,8 @@ const StatusBadge = ({ status }) => {
     withdrawn: "bg-slate-500/20 text-slate-300",
   };
   return (
-    <span className={`rounded-full px-3 py-1 text-xs font-semibold ${map[status] || "bg-white/10"}`}>
-      {status}
+    <span className={`rounded-full px-3 py-1 text-xs font-semibold capitalize ${map[status] || "bg-white/10"}`}>
+      {status || "Unknown"}
     </span>
   );
 };
